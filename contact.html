@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title></title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="stylesheet" href="./css/main.css" type="text/css">
+        <link rel="stylesheet" href="./css/header.css" type="text/css">
+        <link rel="stylesheet" href="./css/home.css" type="text/css">
+        <link rel="stylesheet" href="./css/projects.css" type="text/css">
+        <link rel="stylesheet" href="./css/footer.css" type="text/css">
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            * {box-sizing: border-box;}
+            
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+              margin-top: 6px;
+              margin-bottom: 16px;
+              resize: vertical;
+            }
+            
+            input[type=submit] {
+              background-color: #7f45a0;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+            
+            input[type=submit]:hover {
+              background-color:  #f7088b ;
+            }
+            
+            .container {
+              border-radius: 5px;
+              background-color: #1d263b;
+              padding: 20px;
+            }
+            </style>
+    </head>
+
+    <body>
+        <header class="header">
+          <a href="/" class="header-logo">Jessil Joseph</a>
+          <nav class="nav">
+                <div class="toggle"><i class="fas fa-bars"></i></div>
+                <ul class="nav-menu">
+                  <li class="nav-item"><a href="index.html">Home</a></li>
+                  <li class="nav-item"><a href="bio.html">Bio</a></li>
+                  <li class="nav-item"><a href="qualifications.html">Qualifications</a></li>
+                  <li class="nav-item"><a href="skills.html">Skills</a></li>
+                  <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+                  <li class="nav-item"><a href="contact.html">Contact</a></li>
+                  
+                  </li>
+              </ul>
+            </nav>
+        </header>
+
+        <h3>Contact </h3>
+
+        <div class="container">
+          <form action="/action_page">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">India</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <section>
+          <div class="counter">
+              <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Page Visit Counter &emsp13; </h2>
+              <p id="visitCount"  style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Loading...</p>
+          </div>
+     
+          <div class="servertime">
+              <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> Server Time</h2>
+               <p id="serverTime" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Loading...</p>
+          </div>
+        </section>
+  
+
+      <footer class="footer-container">
+          <div class="footer">
+              <div class="footer-column">
+                  <div class="socials"> 
+                  </div>
+                  <span class="copyright"><i class="fa-regular fa-copyright"></i> Jessil Joseph
+                      2022-2023</span>
+              </div>
+          </div>
+      </footer>
+
+      <script src="js/main.js"></script>
+      <script src="js/counter.js"></script>
+      <script src="js/servertime.js"></script>
+
+
+  </body>
+
+</html>
